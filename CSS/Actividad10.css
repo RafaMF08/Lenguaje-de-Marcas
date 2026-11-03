@@ -1,0 +1,57 @@
+:root {
+  --color-principal: #0066cc;
+  --color-texto: #333333;
+  --color-fondo: #ffffff;
+  --fuente: sans-serif;
+}
+
+body {
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  font-size: 1rem;
+  margin: 20px;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--color-principal);
+  background-color: #f0f0f0;
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--color-principal);
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+label:has(input:required),
+label:has(textarea:required) {
+  font-weight: bold;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+  border: 2px solid red;
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: #dddddd;
+  color: #777777;
+}

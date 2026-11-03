@@ -1,0 +1,70 @@
+:root {
+  --color-principal: #0066cc;
+  --color-texto: #333333;
+  --color-fondo: #ffffff;
+  --color-tarjeta: #f0f0f0;
+  --fuente: sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-principal: #66b2ff;
+    --color-texto: #f0f0f0;
+    --color-fondo: #121212;
+    --color-tarjeta: #1e1e1e;
+  }
+}
+
+body {
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  font-size: 1rem;
+  margin: 20px;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--color-principal);
+  background-color: var(--color-tarjeta);
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--color-principal);
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: var(--color-tarjeta);
+  color: var(--color-texto);
+  border: 1px solid #777777;
+}
+
+label:has(input:required),
+label:has(textarea:required) {
+  font-weight: bold;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+  border: 2px solid red;
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: #444444;
+  color: #888888;
+}

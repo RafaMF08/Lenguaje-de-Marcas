@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 6</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    
+    /* Imagen de fondo con la tarjeta encima */
+    .bg {
+      background: url('https://picsum.photos/600/300') center/cover;
+      padding: 50px;
+      margin-top: 20px;
+    }
+    
+    /* Tarjeta con fondo rgba semitransparente */
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Colores -->
+  <!--
+    Blanco:        #FFFFFF | rgb(255, 255, 255) | hsl(0, 0%, 100%)
+    Negro:         #000000 | rgb(0, 0, 0)       | hsl(0, 0%, 0%)
+    Amarillo puro: #FFFF00 | rgb(255, 255, 0)   | hsl(60, 100%, 50%)
+    Gris medio:    #808080 | rgb(128, 128, 128) | hsl(0, 0%, 50%)
+  -->
+
+  <!-- Imagen con tarjeta semitransparente (rgba) encima -->
+  <div class="bg">
+    <div class="card">
+      <p>Tarjeta sobre imagen con canal alfa (rgba)</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 11</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .lista-separada li:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+    }
+
+    .lista-separada li::marker {
+      color: #0066cc;
+    }
+
+    .titulo-texto h2 + p {
+      font-weight: bold;
+    }
+
+    .enlaces a[href$=".pdf"]::after {
+      content: " (PDF)";
+      color: red;
+    }
+
+    .enlaces a[href^="http"]::after {
+      content: " ↗";
+    }
+
+    .articulo-imagen {
+      border: 2px solid #0066cc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .articulo-imagen img {
+      max-width: 100%;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .formulario-error fieldset:has(:user-invalid) {
+      border: 2px solid red;
+      background: #ffe6e6;
+    }
+
+    .formulario-error input {
+      display: block;
+      margin-top: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="lista-separada">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <div class="titulo-texto">
+    <h2>Título</h2>
+    <p>Primer párrafo (en negrita).</p>
+    <p>Segundo párrafo normal.</p>
+  </div>
+
+  <p class="enlaces">
+    <a href="https://google.com">Enlace web</a> | <a href="doc.pdf">Enlace PDF</a>
+  </p>
+
+  <article class="articulo-imagen">
+    <p>Article con imagen:</p>
+    <img src="https://picsum.photos/300/100" alt="">
+  </article>
+
+  <form class="formulario-error">
+    <fieldset>
+      <input type="email" required placeholder="Escribe un email inválido">
+    </fieldset>
+  </form>
+
+</body>
+</html>

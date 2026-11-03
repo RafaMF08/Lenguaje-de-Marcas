@@ -1,0 +1,51 @@
+<body>
+
+  <!-- Menú de navegación -->
+  <header>
+    <link rel="stylesheet" href="CSS/Actividad10.css">
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formulario de Contacto</h1>
+    
+    <form>
+      <!-- El label envuelve al input para que funcione label:has(input:required) -->
+      <div class="campo-form">
+        <label>
+          Nombre completo:
+          <input type="text" name="nombre" required>
+        </label>
+      </div>
+
+      <div class="campo-form">
+        <label>
+          Correo electrónico (opcional):
+          <input type="email" name="correo">
+        </label>
+      </div>
+
+      <div class="campo-form">
+        <label>
+          Mensaje obligatorio:
+          <textarea name="mensaje" required></textarea>
+        </label>
+      </div>
+
+      <div class="campo-form">
+        <label>
+          Código de usuario (Desactivado):
+          <input type="text" value="USR-1234" disabled>
+        </label>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>
