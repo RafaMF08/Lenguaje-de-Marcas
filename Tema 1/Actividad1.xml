@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Actividad1>
+
+<concesionarios>
+  <!--============= Concesionario1 =============-->
+  <concesionario1>
+    <nombre>AutoSevilla</nombre>
+    <direccion>Nervion</direccion>
+    <telefono>673636634</telefono>
+      <categorias>
+        <categoria>SUV</categoria>
+        <categoria>Electrico</categoria>
+      </categorias>
+     <vehiculos>
+     <!--Este vehiculo se encuentra reservado por un particular-->
+      <vehiculo id = "AB123">
+         <marca pais_origen="EEUU" nombre_comercial="Tesla">Tesla</marca>
+        <modelo>Modelo 3</modelo>
+        <anio>2023</anio>
+        <categoria>Electrico</categoria>
+
+        <reservado_a>
+          <cliente tipo="particular">
+            <dni>12345678A</dni>
+            <nombre>Maria</nombre>
+            <apellidos>Garcia Lopez</apellidos>
+            <direccion>Calle 5</direccion>
+            <telefono>600111222</telefono>
+          </cliente>
+          <fecha_reserva>28/03/2026</fecha_reserva>
+          <fecha_entrega>03/04/2026</fecha_entrega>
+        </reservado_a>
+      </vehiculo>
+      <!--Este vehiculo no se encuentra reservado-->
+      <vehiculo id = "NM778">
+         <marca>
+           <nombre>Mercedes</nombre>
+           <pais>Alemania</pais>
+         </marca>
+        <modelo>Modelo 2</modelo>
+        <año>2018</año>
+        <categoria>Gasolina</categoria>
+      </vehiculo>  
+    </vehiculos>
+  <estado id="Cerrado"></estado>
+ </concesionario1>
+
+ <!--============= Concesionario2 =============-->
+ <concesionario2>
+    <nombre>CochesExpress</nombre>
+    <direccion>Sevilla Este</direccion>
+    <telefono>673652834</telefono>
+      <categorias>
+        <categoria>SUV</categoria>
+        <categoria>Electrico</categoria>
+      </categorias>
+     <vehiculos>
+      <vehiculo id="NE213">
+         <marca>
+           <nombre>Tesla</nombre>
+           <pais>EEUU</pais>
+         </marca>
+        <modelo>Modelo 3</modelo>
+        <año>2023</año>
+        <categoria>Electrico</categoria>
+        
+        <reservado_a>
+          <cliente id="Empresa">
+            <fecha>
+              <fecha_reserva>28/03/2026</fecha_reserva>
+              <fecha_entrega>03/04/2026</fecha_entrega>
+            </fecha>
+            <cif>12345678A</cif>
+            <razon>Transporte</razon>
+            <direccion>Calle 5</direccion>
+            <telefono>670321222</telefono>
+            <perona_contacto>
+              <nombre>Juan</nombre>
+              <apellidos>Oliveros Lopez</apellidos>
+            </perona_contacto>
+          </cliente>
+        </reservado_a>
+      </vehiculo>
+ <!--Este vehiculo no se encuentra reservado-->
+      <vehiculo id="NM778">
+         <marca>
+           <nombre>Mercedes</nombre>
+           <pais>Alemania</pais>
+         </marca>
+        <modelo>Modelo 2</modelo>
+        <año>2018</año>
+        <categoria>Gasolina</categoria>
+      </vehiculo>  
+    </vehiculos>
+  <estado id="Abierto"></estado>
+ </concesionario2>
+</concesionarios>

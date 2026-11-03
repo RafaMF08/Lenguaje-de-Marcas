@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Actividad2>
+<clinicas>
+ 
+  <!-- ============= CLÍNICA 1 ============= -->
+  <clinica1>
+    <nombre>Clínica Veterinaria Giralda</nombre>
+    <direccion>Calle Sierpes 25, 41004 Sevilla</direccion>
+    <telefono>954223344</telefono>
+ 
+    <estado situacion="abierta"/>
+ 
+    <categorias>
+      <categoria>Mamiferos</categoria>
+      <categoria>Aves</categoria>
+      <categoria>Reptiles</categoria>
+    </categorias>
+ 
+    <animales>
+ 
+      
+      <!--  ID del animal: atributo id con dos letras mayúsculas + tres dígitos.
+        Especie: el nombre común y el científico se guardan como atributos.
+        Animal INGRESADO: aparecen aCargoDe, fechaIngreso y fechaPrevistaAlta.
+        Propietario: un particular. -->
+
+      <animal id = "AB123">
+        <nombre>Luna</nombre>
+        <especie nombreComun="Perro" nombreCientifico="Canis lupus familiaris"/>
+        <añoNacimiento>2018</añoNacimiento>
+        <categoria>Mamiferos</categoria>
+        <ingresado>si</ingresado>
+        <aCargoDe>Dra. Marta Ruiz Peña</aCargoDe>
+        <fechaIngreso>2026-09-27</fechaIngreso>
+        <fechaPrevistaAlta>2026-10-02</fechaPrevistaAlta>
+        <propietario>
+          <!-- Propietario particular: DNI, nombre, apellidos, dirección y varios teléfonos -->
+          <particular>
+            <dni>28451236K</dni>
+            <nombre>Antonio</nombre>
+            <apellidos>García Molina</apellidos>
+            <direccion>Avenida de la Constitución 12, 41001 Sevilla</direccion>
+            <telefonos>
+              <telefono>600112233</telefono>
+              <telefono>954778899</telefono>
+            </telefonos>
+          </particular>
+        </propietario>
+      </animal>
+ 
+       <!--   Animal NO ingresado: no aparecen aCargoDe, fechaIngreso ni fechaPrevistaAlta.
+        Propietario: una protectora. -->
+
+      <animal id = "CD456" >
+        <nombre>Kiwi</nombre>
+        <especie nombreComun="Inseparable de cuello rosa" nombreCientifico="Agapornis roseicollis"/>
+        <añoNacimiento>2021</añoNacimiento>
+        <categoria>Aves</categoria>
+        <ingresado>no</ingresado>
+        <propietario>
+          <!-- Propietario protectora: CIF, nombre, dirección, teléfonos y responsable -->
+          <protectora>
+            <cif>G41234567</cif>
+            <nombre>Protectora Patitas del Sur</nombre>
+            <direccion>Calle Los Naranjos 8, 41010 Sevilla</direccion>
+            <telefonos>
+              <telefono>955001122</telefono>
+              <telefono>611223344</telefono>
+            </telefonos>
+            <responsable>
+              <nombre>Lucía</nombre>
+              <apellidos>Fernández Ortega</apellidos>
+            </responsable>
+          </protectora>
+        </propietario>
+      </animal>
+ 
+      <animal id = "EF789">
+        <nombre>Tortuguita</nombre>
+        <especie nombreComun="Galapago de Florida" nombreCientifico="Trachemys scripta elegans"/>
+        <añoNacimiento>2015</añoNacimiento>
+        <categoria>Reptiles</categoria>
+        <ingresado>no</ingresado>
+        <propietario>
+          <particular>
+            <dni>30987654B</dni>
+            <nombre>Carmen</nombre>
+            <apellidos>López Vidal</apellidos>
+            <direccion>Calle Feria 41, 41003 Sevilla</direccion>
+            <telefonos>
+              <telefono>622334455</telefono>
+            </telefonos>
+          </particular>
+        </propietario>
+      </animal>
+ 
+    </animales>
+  </clinica1>
+ 
+  <!-- ======================= CLÍNICA 2 ======================= -->
+  <clinica2>
+    <nombre>Clínica Veterinaria Triana Exóticos</nombre>
+    <direccion>Calle Betis 40, 41010 Sevilla</direccion>
+    <telefono>954334455</telefono>
+ 
+    <!-- Esta clínica solo atiende urgencias en este momento -->
+    <estado situacion="soloUrgencias"/>
+ 
+    <categorias>
+      <categoria>Mamiferos</categoria>
+      <categoria>Aves</categoria>
+      <categoria>Peces</categoria>
+    </categorias>
+ 
+    <animales>
+ 
+      <!-- Animal ingresado con propietario protectora -->
+      <animal id = "GH234">
+        <nombre>Michi</nombre>
+        <especie nombreComun="Gato domestico" nombreCientifico="Felis catus"/>
+        <añoNacimiento>2020</añoNacimiento>
+        <categoria>Mamiferos</categoria>
+        <ingresado>si</ingresado>
+        <aCargoDe>Dr. Javier Santos Rey</aCargoDe>
+        <fechaIngreso>2026-09-28</fechaIngreso>
+        <fechaPrevistaAlta>2026-09-30</fechaPrevistaAlta>
+        <propietario>
+          <protectora>
+            <cif>G41765432</cif>
+            <nombre>Asociación Huellas de Triana</nombre>
+            <direccion>Calle Pureza 15, 41010 Sevilla</direccion>
+            <telefonos>
+              <telefono>954556677</telefono>
+            </telefonos>
+            <responsable>
+              <nombre>Rafael</nombre>
+              <apellidos>Cabello Namaas</apellidos>
+            </responsable>
+          </protectora>
+        </propietario>
+      </animal>
+ 
+      <!-- Animal no ingresado con propietario particular -->
+      <animal id = "IJ567">
+        <nombre>Coco</nombre>
+        <especie nombreComun="Guacamayo azul y amarillo" nombreCientifico="Ara ararauna"/>
+        <añoNacimiento>2012</añoNacimiento>
+        <categoria>Aves</categoria>
+        <ingresado>no</ingresado>
+        <propietario>
+          <particular>
+            <dni>75123498Z</dni>
+            <nombre>Isabel</nombre>
+            <apellidos>Moreno Gil</apellidos>
+            <direccion>Calle San Jacinto 60, 41010 Sevilla</direccion>
+            <telefonos>
+              <telefono>633445566</telefono>
+              <telefono>954990011</telefono>
+            </telefonos>
+          </particular>
+        </propietario>
+      </animal>
+ 
+      <!-- Animal ingresado con propietario particular -->
+      <animal id = "KL890">
+        <nombre>Nemo</nombre>
+        <especie nombreComun="Pez payaso" nombreCientifico="Amphiprion ocellaris"/>
+        <añoNacimiento>2022</añoNacimiento>
+        <categoria>Peces</categoria>
+        <ingresado>si</ingresado>
+        <aCargoDe>Dra. Elena Barrera Cruz</aCargoDe>
+        <fechaIngreso>2026-09-26</fechaIngreso>
+        <fechaPrevistaAlta>2026-10-01</fechaPrevistaAlta>
+        <propietario>
+          <particular>
+            <dni>52346781M</dni>
+            <nombre>Pablo</nombre>
+            <apellidos>Domínguez Ríos</apellidos>
+            <direccion>Calle Castilla 22, 41010 Sevilla</direccion>
+            <telefonos>
+              <telefono>644556677</telefono>
+            </telefonos>
+          </particular>
+        </propietario>
+      </animal>
+ 
+    </animales>
+  </clinica2>
+ 
+</clinicas>

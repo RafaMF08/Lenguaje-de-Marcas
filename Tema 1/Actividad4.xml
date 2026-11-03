@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <!DOCTYPE Actividad4>
+<gimnasios>
+    <!--============= Gimnasio 1 =============-->
+    <gimnasio1>
+        <estado estado="Abierto"></estado>
+
+        <nombre>Family Fitness</nombre>
+        <direccion>C/ Tarso 41007</direccion>
+        <telefono>123456789</telefono>
+        <equipamiento>
+            <categorias>
+                <categoria Disponibilidad="Disponible">Cardio</categoria>
+                <categoria Disponibilidad="Disponible">Fuerza</categoria>
+            </categorias>
+        </equipamiento>
+        <equipos>
+            <equipo id="CT321">
+                <nombre>Cinta de correr</nombre>
+                <anio_adq>2024</anio_adq>
+                <categoria>Cardio</categoria>
+                <marca nombre_comercial="Cinta pro v23" pais_fabr="China">PROFORM</marca>
+            </equipo>
+        </equipos>
+<!--Equipo reservado por Socio-->
+        <reservado_por>
+            <cliente tipo="Socio">
+                <dni>64382842C</dni>
+                <nombre>Ricardo</nombre>
+                <apellidos>Robles Carson</apellidos>
+                <direccion>Calle serena nº4 3ºizq 41008</direccion>
+                <telefonos>543246479</telefonos>
+            </cliente>
+            <fecha_inicio>1/10/2026 17:00</fecha_inicio>
+            <fecha_fin>1/10/2026 19:00</fecha_fin>
+        </reservado_por>
+    </gimnasio1>
+
+    <!--============= Gimnasio 2 =============-->
+    <gimnasio1>
+        <estado estado="En mantenimiento"></estado>
+
+        <nombre>Basic Fit</nombre>
+        <direccion>C/ Morena 41017</direccion>
+        <telefono>646365756</telefono>
+        <equipamiento>
+            <categorias>
+                <categoria Disponibilidad="Disponible">Cardio</categoria>
+                <categoria Disponibilidad="No Disponible">Pilates</categoria>
+                <categoria Disponibilidad="Disponible">Pesas</categoria>
+            </categorias>
+        </equipamiento>
+        <equipos>
+            <equipo id="PS452">
+                <nombre>Banco</nombre>
+                <anio_adq>2026</anio_adq>
+                <categoria>Pesas</categoria>
+                <marca nombre_comercial="Banco GymCompany Largo" pais_fabr="China">GymCompany</marca>
+            </equipo>
+        </equipos>
+<!--Equipo reservado por Entrenador-->
+        <reservado_por>
+            <cliente tipo="Entrenador">
+                <dni>37931483L</dni>
+                <nombre>Alberto</nombre>
+                <apellidos>Díaz García</apellidos>
+                <direccion>Calle Maria Auxiliadora nº5 2ºDer 41006</direccion>
+                <telefonos>683285413</telefonos>
+                <especialidad>Fuerza</especialidad>
+            </cliente>
+            <fecha_inicio>1/10/2026 17:00</fecha_inicio>
+            <fecha_fin>1/10/2026 19:00</fecha_fin>
+        </reservado_por>
+    </gimnasio1>
+
+</gimnasios>

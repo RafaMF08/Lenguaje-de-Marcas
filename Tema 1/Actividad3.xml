@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE Actividad3>
+<videoclubs>
+ 
+  <!-- ============= VIDEOCLUB 1 ============= -->
+  <videoclub>
+    <nombre>Videoclub Cinemanía</nombre>
+    <direccion>Calle Sierpes 25, 41004 Sevilla</direccion>
+    <telefono>954123456</telefono>
+ 
+    <estado situacion = "abierto"/>
+ 
+      <!--Categorías disponibles en este videoclub.-->
+    <categorias>
+      <categoria>Ciencia ficción</categoria>
+      <categoria>Drama</categoria>
+      <categoria>Comedia</categoria>
+    </categorias>
+ 
+    <peliculas>
+      <pelicula id="CF001" alquilada="no">
+        <titulo>Blade Runner</titulo>
+        <director nombre="Ridley" apellidos="Scott"/>
+        <anio_estreno>1982</anio_estreno>
+        <categoria>Ciencia ficción</categoria>
+      </pelicula>
+
+      <pelicula id = "DR002" alquilada = "si">
+        <titulo>El Padrino</titulo>
+        <director nombre = "Francis Ford" apellidos = "Coppola"/>
+        <anio_estreno>1972</anio_estreno>
+        <categoria>Drama</categoria>
+        <alquilada_a>
+          <socio dni = "12345678A">
+            <nombre>María</nombre>
+            <apellidos>García López</apellidos>
+            <direccion>Avenida de la Constitución 10, 41001 Sevilla</direccion>
+            <telefonos>
+              <telefono>600111222</telefono>
+              <telefono>954987654</telefono>
+            </telefonos>
+          </socio>
+          <fecha_alquiler>2026-09-25</fecha_alquiler>
+          <fecha_devolucion>2026-09-30</fecha_devolucion>
+        </alquilada_a>
+      </pelicula>
+ 
+
+       <!-- Película alquilada por una EMPRESA -->
+      <pelicula id = "CO003" alquilada = "si">
+        <titulo>Los lunes al sol</titulo>
+        <director nombre="Fernando" apellidos="León de Aranoa"/>
+        <anio_estreno>2002</anio_estreno>
+        <categoria>Comedia</categoria>
+        <alquilada_a>
+          <empresa cif = "B41234567">
+            <razon_social>Eventos Guadalquivir S.L.</razon_social>
+            <direccion>Polígono La Negrilla, Nave 7, 41016 Sevilla</direccion>
+            <telefonos>
+              <telefono>955222333</telefono>
+            </telefonos>
+            <departamento_solicitante>Departamento de Marketing</departamento_solicitante>
+          </empresa>
+          <fecha_alquiler>2026-09-27</fecha_alquiler>
+          <fecha_devolucion>2026-10-04</fecha_devolucion>
+        </alquilada_a>
+      </pelicula>
+ 
+    </peliculas>
+  </videoclub>
+ 
+  <!-- =========== VIDEOCLUB 2 =========== -->
+  <videoclub>
+    <nombre>Videoclub Séptimo Arte</nombre>
+    <direccion>Calle Betis 40, 41010 Sevilla</direccion>
+    <telefono>954654321</telefono>
+ 
+    <!-- Este videoclub se encuentra actualmente en reformas -->
+    <estado situacion = "en_reformas"/>
+ 
+    <categorias>
+      <categoria>Terror</categoria>
+      <categoria>Animación</categoria>
+      <categoria>Acción</categoria>
+    </categorias>
+ 
+    <peliculas>
+ 
+      <!-- Película alquilada por un socio particular -->
+      <pelicula id = "TE101" alquilada="si">
+        <titulo>El resplandor</titulo>
+        <director nombre = "Stanley" apellidos = "Kubrick"/>
+        <anio_estreno>1980</anio_estreno>
+        <categoria>Terror</categoria>
+        <alquilada_a>
+          <socio dni = "87654321B">
+            <nombre>Javier</nombre>
+            <apellidos>Martín Ruiz</apellidos>
+            <direccion>Calle Asunción 5, 41011 Sevilla</direccion>
+            <telefonos>
+              <telefono>611333444</telefono>
+            </telefonos>
+          </socio>
+          <fecha_alquiler>2026-09-20</fecha_alquiler>
+          <fecha_devolucion>2026-09-27</fecha_devolucion>
+        </alquilada_a>
+      </pelicula>
+ 
+      <!-- Película no alquilada: no aparece <alquilada_a> -->
+      <pelicula id = "AN102" alquilada = "no">
+        <titulo>El viaje de Chihiro</titulo>
+        <director nombre = "Hayao" apellidos = "Miyazaki"/>
+        <anio_estreno>2001</anio_estreno>
+        <categoria>Animación</categoria>
+      </pelicula>
+ 
+      <!-- Película alquilada por una empresa -->
+      <pelicula id = "AC103" alquilada = "si">
+        <titulo>Mad Max: Furia en la carretera</titulo>
+        <director nombre = "Joel" apellidos = "Miller"/>
+        <anio_estreno>2015</anio_estreno>
+        <categoria>Acción</categoria>
+        <alquilada_a>
+          <empresa cif = "A28765432">
+            <razon_social>Cines de Verano Andalucía S.A.</razon_social>
+            <direccion>Avenida de Kansas City 12, 41007 Sevilla</direccion>
+            <telefonos>
+              <telefono>954777888</telefono>
+              <telefono>955999000</telefono>
+            </telefonos>
+            <departamento_solicitante>Departamento de Programación Cultural</departamento_solicitante>
+          </empresa>
+          <fecha_alquiler>2026-09-28</fecha_alquiler>
+          <fecha_devolucion>2026-10-05</fecha_devolucion>
+        </alquilada_a>
+      </pelicula>
+ 
+    </peliculas>
+  </videoclub>
+ 
+</videoclubs>
